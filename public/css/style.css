@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400;8..30,900&family=Rubik+Burned&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+/* font-family: 'Rubik Burned', cursive; */
+}
+
+:root{
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.row{
+    margin: 0px;
+}
+
+
+
+.navbar {
+    background-color: #537FE7 !important;
+    /* color: aliceblue !important; */
+}
+.navbar-brand{
+    /* font-size: 1.9rem; */
+    font-size: 3.3rem;
+    color: #FBF8F1 !important;
+}
+.fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    /* color: ; */
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.naa{
+    font-size: 2.6rem;
+    padding: 0px 10px;
+    /* color: azure !important; */
+}
+.naa a{
+    color: azure;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.foot {
+    margin-top: auto;
+    color: antiquewhite;
+    background-color:#3E54AC;
+    font-size: 1.8rem;
+}
+
+/* // search bar */
+
+/* 
+
+/* main body css */
+
+.main_header_left{
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.main_header_left p{
+    font-size: 2.4rem;
+}
+.main_header_left h1{
+   font-size: 4rem;
+   text-transform: capitalize;
+}
+.main_header_left .txt_cl{
+    font-size: 3rem;
+    color: #0097e6;
+}
+.main_header_left button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px hsl(0, 0%, 0%);
+}
+
+.main_header_left button:hover{
+    box-shadow: 0 8px 6px -6px #0097e6;
+    
+}
+
+
+
+.main_header_right{
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+       /* weather page css start here */
+
+ /* css stry */
+
+.temp_form{
+    width: 60%;
+    position: relative;
+    margin: 8rem auto 6rem;
+}
+
+.temp_form input[type="text"]{
+          width: 100%;
+          padding: 2rem 5rem 2rem 2rem;
+          background-color: #1e202b;
+          color: white;
+          outline: none;
+          border: none;
+          font-size: 1.7rem;
+          border-radius: 3rem;
+}
+
+.temp_form input[type="submit"]{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    width: 10rem;
+    background-color: #0097e6;
+    padding: 0.3rem;
+    border-radius: 3rem;
+    color: white;
+font-size: 1.6rem;
+
+}
+
+.temp_form input[type="submit"]:hover{
+    background-color: white;
+    color: #0097e6;
+}
+
+
+
+    /* body of weather */
+ .tempinfo{
+    background-color: #3d3d3d;
+    color: #d9d9d9;
+    /* width: 400px; */
+    border-radius: 2rem;
+    overflow: hidden;
+   }
+   .tempinfo .top_layer{
+    background-color: #171717;
+    font-size: 3rem;
+  
+   }
+   .tempinfo .top_layer p{
+    margin: 0px;
+   }
+  
+  .main_layer {
+    font-size: 3rem;
+  } 
+  .middle_layer{
+    font-size: 6rem ;
+     }
+
+.data_hide{
+    visibility: hidden;
+}
+
+
+
+
+
+
+/* responsive media query */
+@media (max-width: 946px) {
+    .main_header_left {
+        height: auto;
+        margin: 5rem 0px;
+        /* align-items: center; */
+        text-align: center;
+    }
+    .main_header_right {
+        height: auto;
+        margin-top: 3rem ;
+    }
+}
+
+@media (max-width: 600px) {
+    .temp_form{
+        width: auto;
+    }
+}

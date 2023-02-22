@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}   
+
+</head>
+
+<body>
+    {{>navbar}}
+   
+
+    <!-- main content of page -->
+   <div>
+
+</div>
+  
+
+
+  <div class="container-fluid main_header">
+    <div class="row">
+        <div class="col-md-10 col-12 mx-auto ">
+          <div class="main_content mx-auto">
+             <form class="temp_form">
+                <input type="text" id="cityname" placeholder="Enter your City name" autocomplete="off">
+                <input type="submit" value="search" id="submitbtn">
+             </form>
+          </div>
+          <div class="row"></div>
+          <div class="tempinfo col-lg-4 col-sm-8 col-12 mx-auto">
+            <div class="top_layer d-flex  justify-content-between px-3 py-3">
+                    <p id="day">Tuesday</p>
+                    <p id="today_date">13 Oct</p>
+            </div>
+            <div class="main_layer p-1 ">
+                     <p id="city_name" class="text-center mt-2">Your output shown here</p>
+                     <div class="middle_layer data_hide d-flex justify-content-around">
+                          <p ><span id="temp">0</span><sup>o</sup>C</p>
+                          <p id="temp_status"><i class="fa fa-cloud" style="color:#5172f6" aria-hidden="true"></i></i></p>
+                         
+                     </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+   </div>
+
+   
+
+
+    <!-- footer of page -->
+    {{>footer}}
+    <script src="js/main.js"></script>
+    <script>
+        const curDay=document.getElementById("day");
+             const getCurrentDay=()=>{
+
+                const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                let currentTime= new Date();
+                // console.log(weekday[currentTime.getDay()]);
+                return weekday[currentTime.getDay()];
+            }
+            curDay.innerHTML=getCurrentDay();
+
+        const curDate=document.getElementById("today_date");
+
+        const getcurentdate=()=>{
+            const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"];
+                var now=new Date();
+                var month=months[now.getMonth()+1];
+                var date=now.getDate();
+
+                return `${date} ${month}`;
+        }
+        curDate.innerHTML=getcurentdate();
+    </script>
+</body>
+
+</html>

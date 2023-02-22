@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}   
+
+</head>
+
+<body>
+    {{>navbar}}
+   
+
+    <!-- main content of page -->
+   <div class="container-fluid main_header">
+    <div class="row">
+        <div class="col-md-10 col-12 mx-auto ">
+          <div class="row">
+             <div class="col-lg-6 col-12 main_header_left">
+                      <h1>Welcome to Weather App</h1>
+                      <p>Get The Latest <span class="txt_cl">Weather</span> Info Of Your City</p>
+                      <a href="/weather"><button>Check Now</button></a>
+             </div>
+             <div class="col-lg-6 col-12 main_header_right">
+                <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner" >
+                      <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./images/img1.jpg" class=" w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/img2.jpg" class=" w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/img4.jpg" class=" w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+             </div>
+          </div>
+        </div>
+    </div>
+   </div>
+
+   
+
+
+    <!-- footer of page -->
+    {{>footer}}
+</body>
+
+</html>
